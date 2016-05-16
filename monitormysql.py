@@ -8,6 +8,11 @@ import smtplib
 import MySQLdb.cursors
 from email.mime.text import MIMEText
 
+'''
+    This script is used to monitor the slow query and master slave synchronization status of MySQL,\ 
+    and to kill more than 20 seconds of slow query.
+'''
+
 def killslowqurey():
     master_db="mysqladmin -uroot -p'xxx' -h211.xxx.xx.xxx "
     _command = '{0} {1}'.format(master_db,'processlist')
