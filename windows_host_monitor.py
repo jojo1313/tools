@@ -45,7 +45,7 @@ class Sendmail:
         self.host="smtp.126.com"
         self.user='xxxx@126.com'
         self.pwd='xxxxx'
-        self.to=to or ['xxx9@foxmail.com']#,'xiaoshuzhen@chinasoftinc.com']
+        self.to=to or ['xxx9@foxmail.com']#]
         self.content= content or 'This is a mail from monitor server'
  #       self.cc= cc or ['']
         self.subject= subject or "mysql warning"
